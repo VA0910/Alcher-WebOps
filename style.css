@@ -1,0 +1,193 @@
+body{
+    margin: 0px;
+    font-family: Arial, sans-serif;   
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+header{
+    width: 100%;
+}
+
+.header{
+    display : flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-house{
+    padding:15px;
+}
+#profile{
+    width:40px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.user{
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+   
+}
+#home{
+    display:flex;
+}
+.home{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+.toggle{
+    background-color: #303030;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#list li{
+    list-style-type: none;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+}
+.items i{
+    padding:15px;
+}
+aside{
+    background-color: black;
+    width:15%;
+    color: white;
+    transition: width 0.3s;
+    
+}
+#list{
+    margin-block: 0;
+    padding-inline-start: 5px;
+    background-color:#303030;
+}
+.img{
+    width: 150px;
+    border-radius: 75px;
+}
+.items:hover{
+    background-color:#1A1A1A;
+}
+#new{
+    border-radius: 10px;
+    width: 90%;
+ margin: 10px;
+ font-size: large;
+ cursor: pointer;
+}
+#new p{
+    margin: 10px;
+}
+.list2 li{
+    list-style-type: none;
+    padding: 5px;
+   
+}
+.list2 li a{
+    text-decoration: none;
+color:white;
+}
+.list2 li:hover{
+    background-color:#1A1A1A;
+}
+.main-content{
+    flex-grow: 1;
+    padding: 25px;
+ 
+}
+
+.alert {
+    color: red;
+    margin: 10px 0;
+    background-color: lightgoldenrodyellow;
+    border: 1px red;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+th{
+    background-color: grey;
+}
+table tr:nth-child(even) {
+    background-color:lightgrey; 
+}
+.bar.collapsed{
+  width: 5%;
+  background-color: white;  
+}
+.bar.collapsed ul{
+    display:none;
+}
+.bar.collapsed #new{
+    display: none ;
+}
+
+.list2.hide{
+   
+    display:none;
+}
+.edit-btn{
+    background-color: blue;
+    color: white;
+}
+.delete-btn{
+    background-color: orange;
+    color: white;
+}
+.username{
+    display:flex;
+    align-items: center;
+}
+.username h1{
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .bar {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        z-index: 1;
+    }
+   
+     
+    
+    .bar.collapsed {
+        width: 0;
+        overflow: hidden;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .toggle {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+}
